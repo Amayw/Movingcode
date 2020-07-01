@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var demo = document.querySelector("#demo");
 var style = document.querySelector("#style");
 var heart = document.querySelector("#heart");
-var string = "/* \u4F60\u597D\uFF0C\u6211\u53EB\u5C0F\u738B\u3002\n*  \u9001\u7ED9\u4F60\u4E00\u4E2A\u5C0F\u5FC3\u5FC3\u3002**/\n/* \u9996\u5148\u5C55\u793A\u4E00\u4E2A\u5FC3\u5C16\u51FA\u6765*/\n#heart{\n   border:1px solid red;\n   width:100px;\n   height:100px;\n   transform:rotateZ(45deg);\n   background: red;\n   animation: 0.5s anim infinite alternate;\n}\n/* \u63A5\u7740\u6DFB\u52A0\u2764\u7684\u4E24\u4E2A\u80A9\u8180**/\n#heart::before {\n  border:0.1px solid red;\n  width: 99px;\n  height: 99px;\n  transform: translateX(-50%);\n  border-radius: 50%;\n  background: red;\n}\n#heart::after {\n  border:0.1px solid red;\n  width: 99px;\n  height: 99px;\n  top: -50%;\n  border-radius: 50%;\n  background: red;\n}\n/* biubiubiu~~~\u53D8\u7C89\u8272**/\n   #demo{\n       color:pink;\n   }\n/* \u6700\u540E\u8BA9\u5C0F\u5FC3\u5FC3\u52A8\u8D77\u6765**/\n@keyframes anim {\n  from {\n    transform: scale(1) rotateZ(45deg);\n  }\n  to {\n    transform: scale(1.5) rotateZ(45deg);\n  }\n\n";
+var string = "/* \u4F60\u597D\uFF0C\u6211\u53EB\u5C0F\u738B\u3002\n*  \u9001\u7ED9\u4F60\u4E00\u4E2A\u5C0F\u5FC3\u5FC3\u3002**/\n/* \u9996\u5148\u5C55\u793A\u4E00\u4E2A\u5FC3\u5C16\u51FA\u6765*/\n#heart{\n   border:1px solid red;\n   width:100px;\n   height:100px;\n   transform:rotateZ(45deg);\n   background: red;\n  \n}\n/* \u63A5\u7740\u6DFB\u52A0\u2764\u7684\u4E24\u4E2A\u80A9\u8180**/\n#heart::before {\n  border:0.1px solid red;\n  width: 99px;\n  height: 99px;\n  transform: translateX(-50%);\n  border-radius: 50%;\n  background: red;\n}\n#heart::after {\n  border:0.1px solid red;\n  width: 99px;\n  height: 99px;\n  top: -50%;\n  border-radius: 50%;\n  background: red;\n}\n/* biubiubiu~~~\u53D8\u7C89\u8272**/\n   #demo{\n       color:pink;\n   }\n/* \u6700\u540E\u8BA9\u5C0F\u5FC3\u5FC3\u52A8\u8D77\u6765**/\n@keyframes anim {\n  from {\n    transform: scale(1) rotateZ(45deg);\n  }\n  to {\n    transform: scale(1.5) rotateZ(45deg);\n  }\n}\n#heart{\n  animation: 0.5s anim infinite alternate;\n}\n";
 var n = 0;
 var temp = "";
 
@@ -145,7 +145,7 @@ var step = function step() {
       n++;
       step();
     }
-  }, 20);
+  }, 15);
 };
 
 step();

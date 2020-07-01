@@ -10,7 +10,7 @@ let string = `/* 你好，我叫小王。
    height:100px;
    transform:rotateZ(45deg);
    background: red;
-   animation: 0.5s anim infinite alternate;
+  
 }
 /* 接着添加❤的两个肩膀**/
 #heart::before {
@@ -41,7 +41,10 @@ let string = `/* 你好，我叫小王。
   to {
     transform: scale(1.5) rotateZ(45deg);
   }
-
+}
+#heart{
+  animation: 0.5s anim infinite alternate;
+}
 `;
 let n = 0;
 let temp = ``;
@@ -65,6 +68,6 @@ let step = () => {
       n++;
       step();
     }
-  }, 20);
+  }, 15);
 };
 step();
