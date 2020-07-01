@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+#demo {
+  height: auto;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.heartcontainer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+}
+
+#heart::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#heart::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  #demo {
+    height: 40vh;
+    overflow: auto;
+  }
+  .heartcontainer {
+    height: 30vh;
+  }
+  #heart {
+    position: relative;
+    right: 0;
+    bottom: -150%;
+  }
+}
+
+
+/*# sourceMappingURL=/a.886c66e5.css.map */
